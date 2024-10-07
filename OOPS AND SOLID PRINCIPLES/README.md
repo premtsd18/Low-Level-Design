@@ -27,20 +27,23 @@ They focus on defining a contract by specifying a set of method signatures that 
 The primary purpose of interfaces is to establish a common set of behaviors that multiple, often unrelated, classes can adhere to.
 This promotes a high degree of flexibility and polymorphism in the codebase, as classes from different hierarchies can implement the same interface.
 
-SOLID Principles
-Single Responsibility Principle (SRP):
+# **SOLID Principles**
+
+## **Single Responsibility Principle (SRP):**
 
 A class should have only one reason to change, meaning it should have a single responsibility or job.
 It is only a guideline for design.
 Single responsibility can be subjective and dependent on the specific context of the application.
 Example: Order validation can either be the responsibility of a single class, or multiple classes can be involved in validating user inputs, generating error messages, and checking permissions.
-Open-Closed Principle (OCP):
+
+## **Open-Closed Principle (OCP):**
 
 Software entities (classes, modules, functions) should be open for extension but closed for modification, allowing new functionality to be added without altering existing code.
 Once code is written and tested, it shouldn't need to be modified to add new features.
 Code should be extensible.
 Example: A logger has Info and Error levels, and we should be able to add a Debug level seamlessly.
-Liskov Substitution Principle (LSP):
+
+## **Liskov Substitution Principle (LSP):**
 
 Subtypes (derived classes) should be substitutable for their base types (parent classes) without affecting the correctness of the program.
 Example: We should be able to replace an employee with a manager or an intern seamlessly.
@@ -49,7 +52,8 @@ Interface Segregation Principle (ISP):
 Clients should not be forced to depend on interfaces they do not use.
 We should aim for smaller, more specific interfaces.
 Example: In Swiggy, a customer shouldn't be required to implement KYC like a delivery partner or restaurant owner.
-Dependency Inversion Principle (DIP):
+
+## **Dependency Inversion Principle (DIP):**
 
 High-level modules should not depend on low-level modules; both should depend on abstractions.
 Abstractions should not depend on details; details should depend on abstractions.
